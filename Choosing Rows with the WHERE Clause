@@ -1,0 +1,11 @@
+SELECT * FROM emp
+WHERE sal=1500;
+
+SELECT * FROM emp
+WHERE sal<1500;
+
+SELECT * FROM emp
+WHERE sal!=1500;
+
+SELECT * FROM emp
+WHERE sal>1500;
