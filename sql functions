@@ -1,0 +1,30 @@
+These functions are used to do operations from the values of the column and a single value is returned. 
+1.AVG()-gives the average of the given data
+2.COUNT()-gives the count of the data
+3.FIRST()-first element of the data
+4.LAST()-last element of the data
+5.MAX()-maximum elemnet of the data
+6.MIN()-Minimum element of the data
+7.SUM()-sum of the data 
+SYNATAXES:
+
+SUM():SELECT SUM(ColumnName)
+FROM TableName;
+
+COUNT():SELECT COUNT(ColumnName)
+FROM TableName
+WHERE Condition;
+
+AVG():SELECT AVG(ColumnName)
+FROM TableName;
+
+MIN():SELECT MIN(ColumnName)
+FROM TableName;
+
+MAX():SELECT MAX(ColumnName)
+FROM TableName;
+
+FIRST():SELECT FIRST(ColumnName)
+FROM TableName;
+LAST():SELECT LAST(ColumnName)
+FROM TableName;
