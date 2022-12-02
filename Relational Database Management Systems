@@ -1,0 +1,19 @@
+A relational database management system (RDBMS) is a collection of programs and capabilities that enable IT teams and others to create, update, administer and otherwise interact with a relational database. RDBMSes store data in the form of tables, with most commercial relational database management systems using Structured Query Language (SQL) to access the database. However, since SQL was invented after the initial development of the relational model, it is not necessary for RDBMS use.
+
+The RDBMS is the most popular database system among organizations across the world. It provides a dependable method of storing and retrieving large amounts of data while offering a combination of system performance and ease of implementation.
+
+RDBMS vs. DBMS
+In general, databases store sets of data that can be queried for use in other applications. A database management system supports the development, administration and use of database platforms.
+
+An RDBMS is a type of database management system (DBMS) that stores data in a row-based table structure which connects related data elements. An RDBMS includes functions that maintain the security, accuracy, integrity and consistency of the data. This is different than the file storage used in a DBMS.
+
+Other differences between database management systems and relational database management systems include:
+
+Number of allowed users. While a DBMS can only accept one user at a time, an RDBMS can operate with multiple users.
+Hardware and software requirements. A DBMS needs less software and hardware than an RDBMS.
+Amount of data. RDBMSes can handle any amount of data, from small to large, while a DBMS can only manage small amounts.
+Database structure. In a DBMS, data is kept in a hierarchical form, whereas an RDBMS utilizes a table where the headers are used as column names and the rows contain the corresponding values.
+ACID implementation. DBMSes do not use the atomicity, consistency, isolation and durability (ACID) model for storing data. On the other hand, RDBMSes base the structure of their data on the ACID model to ensure consistency.
+Distributed databases. While an RDBMS offers complete support for distributed databases, a DBMS will not provide support.
+Types of programs managed. While an RDBMS helps manage the relationships between its incorporated tables of data, a DBMS focuses on maintaining databases that are present within the computer network and system hard disks.
+Support of database normalization. An RDBMS can be normalized, but a DBMS cannot.
