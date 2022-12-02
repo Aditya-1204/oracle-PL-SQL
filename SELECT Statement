@@ -1,0 +1,10 @@
+The Oracle SELECT statement is used to retrieve data from one or more than one tables, object tables, views, object views etc.
+
+Syntax:
+   SELECT expressions  FROM tables;
+
+example:
+   Select ename,sal from EMP; 
+   select * from emp;
+   select ename  from  emp where sal=1500;
+   select ename ,sal from emp  order by sal;
