@@ -1,0 +1,37 @@
+Data types are used to represent the nature of the data that can be stored in the database table. 
+For example, in a particular column of a table, if we want to store a string type of data then we will have to declare a string data type of this column.
+
+Data types mainly classified into three categories for every database.They are
+String Data types
+Numeric Data types
+Date and time Data types
+Oracle Data Types
+Oracle String data types
+
+CHAR(size)	:- It is used to store character data within the predefined length. It can be stored up to 2000 bytes.
+NCHAR(size) :-	It is used to store national character data within the predefined length. It can be stored up to 2000 bytes.
+VARCHAR2(size) :-	It is used to store variable string data within the predefined length. It can be stored up to 4000 byte.
+VARCHAR(SIZE) :-	It is the same as VARCHAR2(size). You can also use VARCHAR(size), but it is suggested to use VARCHAR2(size)
+NVARCHAR2(size)	:- It is used to store Unicode string data within the predefined length. We have to must specify the size of NVARCHAR2 data type. It can be stored up to 4000 bytes.
+
+Oracle Numeric Data Types
+
+
+NUMBER(p, s):- It contains precision p and scale s. The precision p can range from 1 to 38, and the scale s can range from -84 to 127.
+FLOAT(p)	:- It is a subtype of the NUMBER data type. The precision p can range from 1 to 126.
+BINARY_FLOAT :- 	It is used for binary precision( 32-bit). It requires 5 bytes, including length byte.
+BINARY_DOUBLE :-	It is used for double binary precision (64-bit). It requires 9 bytes, including length byte.
+
+Oracle Date and Time Data Types
+
+DATE	:- It is used to store a valid date-time format with a fixed length. Its range varies from January 1, 4712 BC to December 31, 9999 AD.
+TIMESTAMP :-	It is used to store the valid date in YYYY-MM-DD with time hh:mm:ss format.
+
+Oracle Large Object Data Types (LOB Types)
+
+BLOB :-	It is used to specify unstructured binary data. Its range goes up to 232-1 bytes or 4 GB.
+BFILE :-	It is used to store binary data in an external file. Its range goes up to 232-1 bytes or 4 GB.
+CLOB :-	It is used for single-byte character data. Its range goes up to 232-1 bytes or 4 GB.
+NCLOB	:- It is used to specify single byte or fixed length multibyte national character set (NCHAR) data. Its range is up to 232-1 bytes or 4 GB.
+RAW(size):- 	It is used to specify variable length raw binary data. Its range is up to 2000 bytes per row. Its maximum size must be specified.
+LONG RAW	:- It is used to specify variable length raw binary data. Its range up to 231-1 bytes or 2 GB, per row.
