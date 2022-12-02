@@ -1,0 +1,30 @@
+What is the physical and logical structure of oracle?
+Logical Database structures
+Logical structures include tablespaces, schema objects, data blocks, extents and segments.
+
+Tablespaces
+Database is logically divided into one or more tablespaces. Each tablespace creates one or more datafiles to physically store data.
+
+Schema objects
+Schema objects are the structure that represents database's data. Schema objects include structures such as tables, views, sequences, stored procedures, indexes, synonyms, clusters and database links.
+
+Data Blocks
+Data block represents specific number of bytes of physical database space on disk.
+
+Extents
+An extent represents continuous data blocks that are used to store specific data information.
+
+Segments
+A segment is a set of extents allocated for a certain logical structure.
+
+Physical database structure
+The physical database structure comprises of datafiles, redo log files and control files
+
+Datafiles
+Datafiles contain database's data. The data of logical data structures such as tables and indexes is stored in datafiles of the database. One or more datafiles form a logical unit of database storage called a tablespace.
+
+Redo log files
+The purpose of these files is to record all changes made to data. These files protect database against failures.
+
+Control files
+Control files contain entries such as database name, name and location of datafiles and redo log files and time stamp of database creation
