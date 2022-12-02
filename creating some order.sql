@@ -1,0 +1,4 @@
+SELECT * FROM emp ORDER BY ename;
+SELECT * FROM emp ORDER BY ename ASC;
+SELECT * FROM emp ORDER BY ename DESC;
+SELECT eName FROM emp ORDER BY 1
