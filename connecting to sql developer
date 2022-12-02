@@ -1,0 +1,42 @@
+To add an Oracle Cloud connection:
+Run Oracle SQL Developer locally.
+The Oracle SQL Developer home page displays.
+
+
+
+Under Connections, right click Connections.
+The Connection menu appears.
+
+
+
+
+Select New Connection.
+The New/Select Database Connection dialog appears.
+
+
+
+
+On the New/Select Database Connection dialog, make the following entries:
+Connection Name - Enter the name for this cloud connection.
+
+Username - Enter the database username . You can either use the default administrator database account (PDB_ADMIN) provided as part of the service or create a new schema, and use it.
+
+Password - Enter the Password required during sign in when accessing Exadata Express.
+
+Connection Type - Select Cloud PDB.
+
+Configuration File - Click Browse, and select the Client Credentials zip file, downloaded from the Exadata Express service console. See Enable Oracle Net Services (SQL*Net) Access for Client Applications for information on downloading the Client Credentials.
+
+Keystore Password - Enter the Password generated while downloading the Client Credentials from the Exadata Express service console.
+
+
+
+
+Click Test.
+Status: Success displays at the left most bottom of the New/Select Database Connection dialog.
+
+Click Connect.
+An entry for the new connection appears under Connections.
+
+Open the new connection.
+If you have connected successfully, the tables and other objects from Exadata Express display under the new connection.
