@@ -1,0 +1,35 @@
+package is a schema object that groups logically related PL/SQL types, variables, constants, subprograms, cursors, and exceptions.
+A package is compiled and stored in the database, where many applications can share its contents.
+
+A package always has a specification, which declares the public items that can be referenced from outside the package.
+
+If the public items include cursors or subprograms, then the package must also have a body.
+The body must define queries for public cursors and code for public subprograms. 
+The body can also declare and define private items that cannot be referenced from outside the package, but are necessary for the internal workings of the package.
+Finally, the body can have an initialization part, whose statements initialize variables and do other one-time setup steps, and an exception-handling part. 
+You can change the body without changing the specification or the references to the public items; therefore, you can think of the package body as a black box.
+
+Packages let you encapsulate logically related types, items, and subprograms in a named PL/SQL module. Each package is easy to understand, and the interfaces between packages are simple, clear, and well defined. This aids application development.
+
+Easier Application Design
+
+When designing an application, all you need initially is the interface information in the package specs. You can code and compile a spec without its body.
+Then, stored subprograms that reference the package can be compiled as well. You need not define the package bodies fully until you are ready to complete the application.
+
+Information Hiding
+
+With packages, you can specify which types, items, and subprograms are public (visible and accessible) or private (hidden and inaccessible). For example, if a package contains four subprograms, three might be public and one private.
+The package hides the implementation of the private subprogram so that only the package (not your application) is affected if the implementation changes. 
+This simplifies maintenance and enhancement. Also, by hiding implementation details from users, you protect the integrity of the package.
+
+Added Functionality
+
+Packaged public variables and cursors persist for the duration of a session. They can be shared by all subprograms that execute in the environment. 
+They let you maintain data across transactions without storing it in the database.
+
+Better Performance
+
+When you call a packaged subprogram for the first time, the whole package is loaded into memory. Later calls to related subprograms in the package require no disk I/O.
+
+Packages stop cascading dependencies and avoid unnecessary recompiling. For example, if you change the body of a packaged function, Oracle does not recompile other subprograms that call the function; 
+these subprograms only depend on the parameters and return value that are declared in the spec, so they are only recompiled if the spec changes.
