@@ -1,0 +1,7 @@
+SELECT ename,job
+FROM emp
+ORDER BY
+(CASE
+    WHEN comm IS NULL THEN sal
+    
+END);
