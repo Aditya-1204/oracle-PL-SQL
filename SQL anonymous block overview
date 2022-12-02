@@ -1,0 +1,28 @@
+PL/SQL anonymous block overview
+PL/SQL is a block-structured language whose code is organized into blocks. A PL/SQL block consists of three sections: declaration, executable, and exception-handling sections. In a block, the executable section is mandatory while the declaration and exception-handling sections are optional.
+A PL/SQL block has a name. Functions or Procedures is an example of a named block. A named block is stored into the Oracle Database server and can be reused later.
+A block without a name is an anonymous block. An anonymous block is not saved in the Oracle Database server, so it is just for one-time use. However, PL/SQL anonymous blocks can be useful for testing purposes.
+The following picture illustrates the structure of a PL/SQL block:
+
+1) Declaration section
+A PL/SQL block has a declaration section where you declare variables, allocate memory for cursors, and define data types.
+2) Executable section
+A PL/SQL block has an executable section. An executable section starts with the keyword BEGIN and ends with the keyword END. The executable section must have a least one executable statement, even if it is the NULL statement which does nothing.
+3) Exception-handling section
+A PL/SQL block has an exception-handling section that starts with the keyword EXCEPTION. The exception-handling section is where you catch and handle exceptions raised by the code in the execution section.
+Note a block itself is an executable statement, therefore you can nest a block within other blocks.
+PL/SQL anonymous block example
+The following example shows a simple PL/SQL anonymous block with one executable section.
+BEGIN
+   DBMS_OUTPUT.put_line ('Hello World!');
+END;
+Code language: SQL (Structured Query Language) (sql)
+The executable section calls the DMBS_OUTPUT.PUT_LINE procedure to display the "Hello World" message on the screen.
+Execute a PL/SQL anonymous block using SQL*Plus
+Once you have the code of an anonymous block, you can execute it using SQL*Plus, which is a command-line interface for executing SQL statement and PL/SQL blocks provided by Oracle Database.
+
+First, connect to the Oracle Database server using a username and password.
+
+Second, turn on the server output using the SET SERVEROUTPUT ON command so that the DBMS_OUTPUT.PUT_LINE procedure will display text on the screen.
+Third, type the code of the block and enter a forward slash ( /) to instruct SQL*Plus to execute the block. Once you type the forward-slash (/), SQL*Plus will execute the block and display the Hello World message on the screen
+If you want to edit the code block, use the edit command. SQL*Plus will write the code block to a file and open it in a text editor as shown in the following picture:
