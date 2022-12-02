@@ -1,0 +1,33 @@
+There are four kinds of literal values supported in SQL. They are : Character string, Bit string, Exact numeric, and Approximate numeric. These are explained as following below.
+
+Character string :
+Character strings are written as a sequence of characters enveloped in single quotes. the only quote character is delineate at intervals a personality string by 2 single quotes. Some example of character strings are :
+‘My String’
+‘I love GeeksForGeeks’
+‘16378’
+
+Bit string :
+A bit string is written either as a sequence of 0s and 1s enveloped in single quotes and preceded by the letter ‘B’ or as a sequence of positional representation system digits enveloped in single quotes and preceded by the letter X’ some examples are given below :
+B’10001011′
+B’1′
+B’0′
+X’C 5′
+X’0′
+
+Exact numeric :
+These literals ar written as a signed or unsigned decimal variety probably with mathematical notation. Samples of actual numeric literals are given below :
+
+8
+80
+80.00
+0.8
++88.88
+-88.88
+
+Approximate numeric :
+Approximate numeric literals are written as actual numeric literals followed by the letter ‘E’, followed by a signed or unsigned number. Some example are :
+6E6
+66.6E6
++66E-6
+0.66E
+-6.66E-8
