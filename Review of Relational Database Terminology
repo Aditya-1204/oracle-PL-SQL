@@ -1,0 +1,12 @@
+--A relational database stores data across multiple tables that are linked together through related fields.
+--Desktop databases are designed to store data locally, to be accessed on an individual personal computer system.
+--Server databases are designed to be stored on a server that can be accessed over a network by a large number of users on client devices.
+--A relation is a table in a database.
+--A tuple is a row in a database table. This is also known as a record.
+--An attribute is an individual data item in a record. This is also known as a field.
+--The domain is all the possible allowable values for an attribute.
+--The cardinality is how unique an attribute is in terms of its data values.
+--A select operation retrieves a subset of tuples from a relation.
+--A union operation retrieves all the tuples from two relations combined together.
+--A intersect operation retrieves the tuples from two relations that appear in both relations.
+--A join operation combines the attributes from two relations.
