@@ -1,0 +1,7 @@
+SELECT ename ,job
+FROM emp
+WHERE sal IN (800, 1500,2000);
+
+SELECT ename ,job
+FROM emp
+WHERE sal BETWEEN 1500 AND 3000;
