@@ -1,0 +1,17 @@
+History Of Oracle : 
+Oracle is most widely used Database Management System in most of the Companies.Oracle uses SQL   pronounced as ‘Sequel’ language to data manipulation and operations on data.I am explaining History of Oracle in this article. ‘SEQUEL’ stands for ‘Structured English Query Language’ which is developed by IBM Corporation limited to use codd’s model in 1979.In 1979 Oracle introduced first commercially available implementation of SQL.Now SQL is called as Standard RDBMS language.Oracle Corporation was started by two computer programmers, Larry Ellison and Bob Miner in 1977. Both Larry and Bob had prior experience in building database programs for different companies. Their first project was building a special database program for the CIA (Central Intelligence Agency).
+Different Versions Of Oracle :
+In 1977, SEL (Software Development Laboratory) … V1
+In 1979, RSI (Relational S/W Incorporation) …. V2
+In 1983, Oracle Corporation à Oracle 3 [Developed Using ‘C’, which supports simple queries but does not support transactions]
+In 1984, Oracle 4 Supports Transactions [Commit/Rollback]
+In 1985, Oracle 5  Client-Server Architecture [Only install DB in Server, so that ‘N’ no of Clients can connect is known as Client-Server Architecture].
+In 1989, Oracle 6  PL/SQL
+In 1992, Oracle 7  Supports DWH [OLAP-Online Analytical Processing]
+In 1997, Oracle 8 ORDMBS
+In 1999, Oracle 8i  ‘I’ means Internet & it has inbuilt JVM (JAVA Virtual Machine)
+In 2001, Oracle 9i  with 400 New features, e.g. XML (X tended Markup Language), RAC (Real Application Clusters) etc which provided high availability & performance.
+In 2003, Oracle 10g ‘g’ means grid (group of DB Servers)
+In 2006, Oracle 11g  we can add columns with values etc.
+In July 2014 Oracle 12 C is launched which means oracle with Cloud.
+In Feb 2018 Oracle 18 C is launched which is worlds first autonomous database
