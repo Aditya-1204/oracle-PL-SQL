@@ -1,0 +1,11 @@
+SELECT * FROM emp
+WHERE ename like 'S%';
+
+SELECT * FROM emp
+WHERE ename like '%H'; 
+
+SELECT * FROM emp
+WHERE ename like '_L%'; 
+
+SELECT * FROM emp
+WHERE ename like '%H%'
