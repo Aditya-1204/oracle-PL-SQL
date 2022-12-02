@@ -1,0 +1,226 @@
+Data Types in PL/SQL. The PL/SQL variables, constants and parameters must have a valid data type, which specifies a storage format, constraints, and a valid range of values. We will focus on the SCALAR and the LOB data types in this chapter. The other two data types will be covered in other chapters.
+
+S.No	Category & Description
+1	
+Scalar
+
+Single values with no internal components, such as a NUMBER, DATE, or BOOLEAN.
+
+2	
+Large Object (LOB)
+
+Pointers to large objects that are stored separately from other data items, such as text, graphic images, video clips, and sound waveforms.
+
+3	
+Composite
+
+Data items that have internal components that can be accessed individually. For example, collections and records.
+
+4	
+Reference
+
+Pointers to other data items.
+
+PL/SQL Scalar Data Types and Subtypes
+PL/SQL Scalar Data Types and Subtypes come under the following categories −
+
+S.No	Date Type & Description
+1	
+Numeric
+
+Numeric values on which arithmetic operations are performed.
+
+2	
+Character
+
+Alphanumeric values that represent single characters or strings of characters.
+
+3	
+Boolean
+
+Logical values on which logical operations are performed.
+
+4	
+Datetime
+
+Dates and times.
+
+PL/SQL provides subtypes of data types. For example, the data type NUMBER has a subtype called INTEGER. You can use the subtypes in your PL/SQL program to make the data types compatible with data types in other programs while embedding the PL/SQL code in another program, such as a Java program.
+
+PL/SQL Numeric Data Types and Subtypes
+Following table lists out the PL/SQL pre-defined numeric data types and their sub-types −
+
+S.No	Data Type & Description
+1	
+PLS_INTEGER
+
+Signed integer in range -2,147,483,648 through 2,147,483,647, represented in 32 bits
+
+2	
+BINARY_INTEGER
+
+Signed integer in range -2,147,483,648 through 2,147,483,647, represented in 32 bits
+
+3	
+BINARY_FLOAT
+
+Single-precision IEEE 754-format floating-point number
+
+4	
+BINARY_DOUBLE
+
+Double-precision IEEE 754-format floating-point number
+
+5	
+NUMBER(prec, scale)
+
+Fixed-point or floating-point number with absolute value in range 1E-130 to (but not including) 1.0E126. A NUMBER variable can also represent 0
+
+6	
+DEC(prec, scale)
+
+ANSI specific fixed-point type with maximum precision of 38 decimal digits
+
+7	
+DECIMAL(prec, scale)
+
+IBM specific fixed-point type with maximum precision of 38 decimal digits
+
+8	
+NUMERIC(pre, secale)
+
+Floating type with maximum precision of 38 decimal digits
+
+9	
+DOUBLE PRECISION
+
+ANSI specific floating-point type with maximum precision of 126 binary digits (approximately 38 decimal digits)
+
+10	
+FLOAT
+
+ANSI and IBM specific floating-point type with maximum precision of 126 binary digits (approximately 38 decimal digits)
+
+11	
+INT
+
+ANSI specific integer type with maximum precision of 38 decimal digits
+
+12	
+INTEGER
+
+ANSI and IBM specific integer type with maximum precision of 38 decimal digits
+
+13	
+SMALLINT
+
+ANSI and IBM specific integer type with maximum precision of 38 decimal digits
+
+14	
+REAL
+
+Floating-point type with maximum precision of 63 binary digits (approximately 18 decimal digits)
+
+Following is a valid declaration −
+
+DECLARE 
+   num1 INTEGER; 
+   num2 REAL; 
+   num3 DOUBLE PRECISION; 
+BEGIN 
+   null; 
+END; 
+/ 
+When the above code is compiled and executed, it produces the following result −
+
+PL/SQL procedure successfully completed 
+PL/SQL Character Data Types and Subtypes
+Following is the detail of PL/SQL pre-defined character data types and their sub-types −
+
+S.No	Data Type & Description
+1	
+CHAR
+
+Fixed-length character string with maximum size of 32,767 bytes
+
+2	
+VARCHAR2
+
+Variable-length character string with maximum size of 32,767 bytes
+
+3	
+RAW
+
+Variable-length binary or byte string with maximum size of 32,767 bytes, not interpreted by PL/SQL
+
+4	
+NCHAR
+
+Fixed-length national character string with maximum size of 32,767 bytes
+
+5	
+NVARCHAR2
+
+Variable-length national character string with maximum size of 32,767 bytes
+
+6	
+LONG
+
+Variable-length character string with maximum size of 32,760 bytes
+
+7	
+LONG RAW
+
+Variable-length binary or byte string with maximum size of 32,760 bytes, not interpreted by PL/SQL
+
+8	
+ROWID
+
+Physical row identifier, the address of a row in an ordinary table
+
+9	
+UROWID
+
+Universal row identifier (physical, logical, or foreign row identifier)
+
+PL/SQL Boolean Data Types
+The BOOLEAN data type stores logical values that are used in logical operations. The logical values are the Boolean values TRUE and FALSE and the value NULL.
+
+However, SQL has no data type equivalent to BOOLEAN. Therefore, Boolean values cannot be used in −
+
+SQL statements
+Built-in SQL functions (such as TO_CHAR)
+PL/SQL functions invoked from SQL statements
+PL/SQL Datetime and Interval Types
+The DATE datatype is used to store fixed-length datetimes, which include the time of day in seconds since midnight. Valid dates range from January 1, 4712 BC to December 31, 9999 AD.
+
+The default date format is set by the Oracle initialization parameter NLS_DATE_FORMAT. For example, the default might be 'DD-MON-YY', which includes a two-digit number for the day of the month, an abbreviation of the month name, and the last two digits of the year. For example, 01-OCT-12.
+
+Each DATE includes the century, year, month, day, hour, minute, and second. The following table shows the valid values for each field −
+
+Field Name	Valid Datetime Values	Valid Interval Values
+YEAR	-4712 to 9999 (excluding year 0)	Any nonzero integer
+MONTH	01 to 12	0 to 11
+DAY	01 to 31 (limited by the values of MONTH and YEAR, according to the rules of the calendar for the locale)	Any nonzero integer
+HOUR	00 to 23	0 to 23
+MINUTE	00 to 59	0 to 59
+SECOND	00 to 59.9(n), where 9(n) is the precision of time fractional seconds	0 to 59.9(n), where 9(n) is the precision of interval fractional seconds
+TIMEZONE_HOUR	-12 to 14 (range accommodates daylight savings time changes)	Not applicable
+TIMEZONE_MINUTE	00 to 59	Not applicable
+TIMEZONE_REGION	Found in the dynamic performance view V$TIMEZONE_NAMES	Not applicable
+TIMEZONE_ABBR	Found in the dynamic performance view V$TIMEZONE_NAMES	Not applicable
+PL/SQL Large Object (LOB) Data Types
+Large Object (LOB) data types refer to large data items such as text, graphic images, video clips, and sound waveforms. LOB data types allow efficient, random, piecewise access to this data. Following are the predefined PL/SQL LOB data types −
+
+Data Type	Description	Size
+BFILE	Used to store large binary objects in operating system files outside the database.	System-dependent. Cannot exceed 4 gigabytes (GB).
+BLOB	Used to store large binary objects in the database.	8 to 128 terabytes (TB)
+CLOB	Used to store large blocks of character data in the database.	8 to 128 TB
+NCLOB	Used to store large blocks of NCHAR data in the database.	8 to 128 TB
+PL/SQL User-Defined Subtypes
+A subtype is a subset of another data type, which is called its base type. A subtype has the same valid operations as its base type, but only a subset of its valid values.
+
+PL/SQL predefines several subtypes in package STANDARD. For example, PL/SQL predefines the subtypes CHARACTER and INTEGER as follows −
+
+SUBTYPE CHARACTER IS CHAR; 
+SUBTYPE INTEGER IS NUMBER(38,0);
