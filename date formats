@@ -1,0 +1,15 @@
+ Some of the more popular ones include:
+ 
+MM	Numeric month (e.g., 07)
+MON	Abbreviated month name (e.g., JUL)
+MONTH	Full month name (e.g., JULY)
+DD	Day of month (e.g., 24)
+DY	Abbreviated name of day (e.g., FRI)
+YYYY	4-digit year (e.g., 1998)
+YY	Last 2 digits of the year (e.g., 98)
+RR	Like YY, but the two digits are ``rounded'' to a year in the range 1950 to 2049. Thus, 06 is considered 2006 instead of 1906
+AM (or PM)	Meridian indicator
+HH	Hour of day (1-12)
+HH24	Hour of day (0-23)
+MI	Minute (0-59)
+SS	Second (0-59)
