@@ -1,0 +1,13 @@
+Star and snowflake schema designs are mechanisms to separate facts and dimensions into separate tables. Snowflake schemas 
+further separate the different levels of a hierarchy into separate tables. In either schema design, each table is related to another table
+with a primary key/foreign key relationship. Primary key/foreign key relationships are used in relational databases to define many-to-one
+relationships between tables.
+
+Star Schema:
+Star schema is the type of multidimensional model which is used for data warehouse. In star schema,
+The fact tables and the dimension tables are contained. In this schema fewer foreign-key join is used.
+This schema forms a star with fact table and dimension tables.
+
+Snowflake Schema:
+Snowflake Schema is also the type of multidimensional model which is used for data warehouse. In snowflake schema, The fact tables, 
+dimension tables as well as sub dimension tables are contained. This schema forms a snowflake with fact tables, dimension tables as well as sub-dimension tables.
