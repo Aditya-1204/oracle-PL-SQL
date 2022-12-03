@@ -1,0 +1,12 @@
+The Oracle Exadata Database Machine is engineered to deliver dramatically better performance, cost-effectiveness, 
+and availability for Oracle databases. Exadata features a modern cloud-enabled architecture with scale-out high-performance database servers,
+scale-out intelligent storage servers with state-of-the-art PCIe flash,
+leading-edge storage cache using persistent memory, and cloud-scale RDMA over Converged Ethernet (RoCE) internal fabric that connects all servers and storage.
+Unique algorithms and protocols in Exadata implement database intelligence in storage, compute, and networking to deliver higher performance and capacity at 
+lower costs than other platforms, for all types of modern database workloads, including Online Transaction Processing (OLTP), Data Warehousing (DW), 
+In-Memory Analytics, Internet of Things (IoT), financial, gaming and compliance data management, as well as efficient consolidation of mixed workloads.
+
+Simple and fast to implement, the Exadata Database Machine X9M-2 powers and protects your most important databases. 
+Exadata can be purchased and deployed on-premises as the ideal foundation for a private database cloud, or using a subscription model and deployed 
+in the Oracle Public Cloud or Cloud at Customer with all infrastructure management performed by Oracle. The Oracle Autonomous Database is available on 
+either the Oracle Public Cloud or Cloud at Customer.
