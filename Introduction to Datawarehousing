@@ -1,0 +1,17 @@
+A data warehouse is a type of data management system that is designed to enable and support business intelligence (BI) activities, 
+especially analytics. Data warehouses are solely intended to perform queries and analysis and often contain large amounts of historical data. 
+The data within a data warehouse is usually derived from a wide range of sources such as application log files and transaction applications.
+
+A data warehouse centralizes and consolidates large amounts of data from multiple sources.
+Its analytical capabilities allow organizations to derive valuable business insights from their data to improve decision-making. 
+Over time, it builds a historical record that can be invaluable to data scientists and business analysts. Because of these capabilities,
+a data warehouse can be considered an organization’s “single source of truth.”
+
+A typical data warehouse often includes the following elements:
+
+A relational database to store and manage data
+An extraction, loading, and transformation (ELT) solution for preparing the data for analysis
+Statistical analysis, reporting, and data mining capabilities
+Client analysis tools for visualizing and presenting data to business users
+Other, more sophisticated analytical applications that generate actionable information by applying data science and artificial intelligence (AI) algorithms,
+or graph and spatial features that enable more kinds of analysis of data at scale
