@@ -1,0 +1,28 @@
+Associative Arrays – introduce you to associative arrays including declaring associative arrays, populating values, and iterating over array elements.
+
+As the name suggests, associative arrays are used to hold the values in key-value pairs. 
+The key used can be either a string or integer type. Associative arrays are also called an Index-by table. 
+This collection can be either dense or sparse. 
+In associative arrays, the array size is not fixed in the starting and the programmer needs not to initialize them before using it. 
+An associative array comes under the category of non-persistent collections which means that they are not stored in the database and can not be reused so they are 
+defined inside the PL/SQL block and are used in that particular session only. 
+These arrays are under the category of unbounded collections.
+
+SYNTAX::
+
+TYPE typ_name IS TABLE OF element_data_type;
+
+Collection Methods
+PL/SQL provides some predefined methods to make it easy to work with collections. Some of the methods are given below:
+
+S.No.	  Method Name	                 Description
+1.	    COUNT	           It returns the number of elements present in the collection
+2.	    FIRST	           It returns the smallest (first) index number in the collection for integer subscripts
+3.	    LAST	           It returns the largest (last) index number in the collection for integer subscripts.
+4.	    EXISTS(n)	       It is used to check whether a particular element is present in the collection or not. It returns TRUE if the nth elements are present in the collection, FALSE if not.
+5.	    PRIOR(n)	       It returns the index number that is the predecessor of the index(n) given by the user in the collection.
+6.	    NEXT(n)	         It returns the index number that is the successor of the index(n) given by the user in the collection.
+7.	    TRIM	           It is used to remove elements from the collection. TRIM removes the last element from the collection and TRIM(n) removes the last n element from the end of the collection.
+8.	    DELETE	         It is used to remove all the elements from the given collection. It sets the collection count to 0 after removing all elements
+9.	    DELETE(m,n)	     It is used in the case of associative arrays and indexed tables to remove all the elements in the range from m to n. It returns null if m is greater than n.
+10.	    LIMIT	           It is used to check the maximum size of the collection.
